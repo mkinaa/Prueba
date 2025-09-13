@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bitácora de Actividades</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f0f0f0;
+    }
+    .container {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 1200px;
+      margin: auto;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    img {
+      max-width: 300px;
+      height: auto;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Bitácora de Actividades</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Hora</th>
+          <th>Acción realizada</th>
+          <th>Resultado / Error</th>
+          <th>Evidencia (captura)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>12:52</td>
+          <td>Creación de la VM en Azure (B1s, Ubuntu)</td>
+          <td>VM creada correctamente</td>
+          <td><img src="maquina virtual creada y funcionando 12.52.png" alt="VM creada" /></td>
+        </tr>
+         <tr>
+          <td>13:00</td>
+          <td>Conexion a VM</td>
+          <td>Conexion exitosa</td>
+          <td><img src="conexion .png" alt="Conexion" /></td>
+        </tr>
+        <tr>
+          <td>13:03</td>
+          <td>Update </td>
+          <td>Exitoso </td>
+          <td><img src="update.png" alt="Update" /></td>
+        </tr>
+        <tr>
+          <td>13:00</td>
+          <td>Instalación de Apache</td>
+          <td>Servicio activo</td>
+          <td><img src="i apache.png" alt="Apache instalado" /></td>
+        </tr>
+        <tr>
+          <td>13:05</td>
+          <td>Status apache</td>
+          <td>Apache activo correctamente</td>
+          <td><img src="apache runing.png" alt="Apache activo" /></td>
+        </tr>
+        <tr>
+          <td>13:10</td>
+          <td>Estructura HTML</td>
+          <td>Correcta</td>
+          <td><img src="estructura html.png" alt="Estructura" /></td>
+        </tr>
+        <tr>
+          <td>13:15</td>
+          <td>Instalación git</td>
+          <td>Correcta</td>
+          <td><img src="i git.png" alt="git" /></td>
+        </tr>
+        <tr>
+          <td>13:17</td>
+          <td>Eliminar index original</td>
+          <td>Exitoso</td>
+          <td><img src="eliminar index.png" alt="index" /></td>
+        </tr>
+        <tr>
+          <td>13:20</td>
+          <td>Configuración de NSG</td>
+          <td>HTTP abierto, SSH restringido</td>
+          <td><img src="crear puerto.png" alt="NSG configurado" /></td>
+        </tr>
+        <tr>
+          <td>13:40</td>
+          <td>Publicación de evidencias en <code>/log/</code></td>
+          <td>Log y reporte accesibles vía navegador</td>
+          <td><img src="image.png" alt="Log publicado" /></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

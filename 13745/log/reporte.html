@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporte Final</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: auto;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        .imagen {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .imagen img {
+            width: 200px;
+            border-radius: 10px;
+        }
+
+        .info {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .descripcion {
+            margin-top: 20px;
+            font-style: italic;
+        }
+
+        .contenido {
+            margin-top: 20px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Reporte Final del Proyecto</h1>
+        <h2>Conclusion</h2>
+        <p>Durante este trabajo, con mi compañero, pudimos aplicar conocimientos teóricos y prácticos sobre la
+            computación en la nube junto a otros ramos antes vistos, como linux y programación web. Logramos configurar
+            correctamente una máquina virtual en Azure, instalar servicios y desplegar contenido web. El trabajo en
+            equipo y la planificación fueron claves para completar las tareas sin errores significativos.</p>
+
+        <h2>Resumen de Arquitectura</h2>
+        <p>Utilizamos una arquitectura simple basada en una VM Linux en Azure, configurada como servidor web mediante
+            Apache. El contenido se desplegó desde un repositorio remoto (Github).</p>
+
+
+        <h2>Medidas de Seguridad Implementadas</h2>
+        <p>Durante el proceso de despliegue y configuración, se incorporaron diversas medidas orientadas a fortalecer la
+            seguridad del entorno:</p>
+        <ul>
+            <li>Se utilizó Azure Bastion para acceder a la máquina virtual de forma segura, evitando la exposición de
+                puertos como RDP o SSH a internet.</li>
+            <li>Se configuraron grupos de seguridad de red (NSG) para definir reglas precisas sobre el tráfico permitido
+                hacia y desde la VM.</li>
+            <li>Las conexiones a servicios externos, como Git, se realizaron mediante protocolos cifrados (HTTPS/SSH),
+                asegurando la integridad y confidencialidad de los datos transmitidos.</li>
+            <li>Antes de proceder con la instalación de software, se actualizaron los paquetes del sistema operativo
+                para reducir vulnerabilidades existentes.</li>
+        </ul>
+
+
+        <h2>Reflexión Final</h2>
+        <p>
+            Este proyecto nos brindó una visión integral del ciclo de despliegue de una aplicación web en la nube,
+            abarcando desde la creación y configuración de la infraestructura hasta su puesta en marcha y visualización
+            final.
+            El uso de herramientas como Azure, Git y Apache permitió consolidar conocimientos adquiridos en módulos
+            anteriores, especialmente en áreas como automatización, seguridad, gestión de servidores y trabajo
+            colaborativo.
+            En conjunto, esta experiencia reforzó competencias fundamentales para el desarrollo profesional en entornos
+            de tecnologías cloud.
+        </p>
+
+    </div>
+
+
+</body>
+
+</html>
